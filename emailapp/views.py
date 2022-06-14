@@ -10,7 +10,7 @@ def obuna(request):
     if request.method == 'POST':
         o = forms.Emailapp(request.POST)
         subject = 'Obuna Bo`ldingiz'
-        message = 'Obuna bo`ldingiz!!!  Kartangizdan 1 000 000 UZS muvaffaqiyatli yechildi. RAXMAT!!!'
+        message = 'Obuna bo`ldingiz!!!'
         recepient = str(o['Email'].value())
         send_mail(subject, 
             message, EMAIL_HOST_USER, [recepient], fail_silently = False)
